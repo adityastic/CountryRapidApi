@@ -30,8 +30,12 @@ jobs:
           java-version: 1.8
       - name: Build APK
         run: ./gradlew assembleDebug --stacktrace
-      - name: Upload APK
+      - name: Upload Artifact
         uses: actions/upload-artifact@v1
         with:
           name: Android APK
           path: app/build/outputs/apk/debug/app-debug.apk
+      - name: Upload APK
+        run: ./.github/scripts/upload-apk.sh
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
