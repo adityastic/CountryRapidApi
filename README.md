@@ -2,7 +2,7 @@
 
 # CountryRapidApi
 
-Debug App: ![Debug App](https://github.com/adityastic/CountryRapidApi/raw/apk/app-debug.apk)
+Debug App: [Latest Debug Build](https://github.com/adityastic/CountryRapidApi/raw/apk/app-debug.apk)
 
 # Screenshots
 
