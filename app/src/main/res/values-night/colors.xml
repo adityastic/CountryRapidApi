@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#EF1515</color>
+    <color name="bg">#000000</color>
+    <color name="navcolor">#000001</color>
+    <color name="daynight_textColor">#FFFFFF</color>
+    <color name="circle_color">#111111</color>
+    <color name="rounded_rectangle">#111111</color>
+    <color name="circle_image_border_color">#ffffff</color>
+    <color name="shadow_color">#60000000</color>
+</resources>

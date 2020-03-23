@@ -1,0 +1,2 @@
+rootProject.name='RapidApi'
+include ':app'

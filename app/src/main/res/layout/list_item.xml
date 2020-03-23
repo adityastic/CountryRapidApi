@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/country_margin"
+    android:layout_marginTop="@dimen/country_margin"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/country_icon_size"
+            android:layout_height="@dimen/country_icon_size"
+            app:civ_border_color="@color/circle_image_border_color"
+            app:civ_border_width="@dimen/circle_border_width"
+            app:civ_shadow="true"
+            android:transitionName="@string/city_image"
+            app:civ_shadow_color="@color/shadow_color"
+            app:civ_shadow_radius="@dimen/shadow_radius"
+            tools:ignore="UnusedAttribute" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/country_item_padding"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_weight="25"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/list_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/country_margin_top"
+                android:fontFamily="@font/raleway_bold"
+                android:paddingStart="@dimen/country_padding_left"
+                android:text="@string/dummy_country"
+                android:textSize="@dimen/country_size"
+                android:textColor="@color/daynight_textColor"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlSymmetry" />
+
+            <TextView
+                android:id="@+id/list_capital"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/raleway_bold"
+                android:paddingStart="@dimen/country_padding_left"
+                android:text="@string/dummy_city"
+                android:textSize="@dimen/city_text_size"
+                android:textColor="@color/daynight_textColor"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlSymmetry" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/list_region"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/raleway_bold"
+            android:paddingStart="@dimen/country_padding_left"
+            android:text="@string/dummy_region"
+            android:textColor="@color/daynight_textColor"
+            tools:ignore="RtlSymmetry" />
+    </LinearLayout>
+</LinearLayout>

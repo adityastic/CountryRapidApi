@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">RapidApi</string>
+    <string name="regin">Regin</string>
+    <string name="capital">Capital</string>
+    <string name="allcountries">All Countries</string>
+    <string name="language_name">Language Name</string>
+    <string name="languages">Languages</string>
+    <string name="search">Search.....</string>
+    <string name="dummy_heading_name">Capital Name</string>
+    <string name="city_image">cityimage</string>
+    <string name="country_name">Country Name</string>
+    <string name="capital_name">Capital Name</string>
+    <string name="dummy_population">Population</string>
+    <string name="region_text">Region</string>
+    <string name="global_text">Global</string>
+    <string name="dummy_country">Country Name</string>
+    <string name="dummy_city">City Name</string>
+    <string name="dummy_region">Region</string>
+</resources>

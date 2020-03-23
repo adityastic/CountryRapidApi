@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#741FD5</color>
+    <color name="bg">#FFFFFF</color>
+    <color name="navcolor">#FFFFFF</color>
+    <color name="daynight_textColor">#000000</color>
+    <color name="buttonFocused">#AE5D6A88</color>
+    <color name="selectableItemBackgroundBorderless">#14000000</color>
+    <color name="background">#000000</color>
+    <color name="circle_color">#fefefe</color>
+    <color name="rounded_rectangle">#fefefe</color>
+    <color name="circle_image_border_color">#ffffff</color>
+    <color name="shadow_color">#60000000</color>
+</resources>
