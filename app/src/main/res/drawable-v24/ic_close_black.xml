@@ -4,7 +4,7 @@
     android:height="32dp"
     android:viewportWidth="32"
     android:viewportHeight="32"
-    android:tint="@color/daynight_textColor">
+    android:tint="@color/dayNight_textColor">
 
     <path
         android:fillColor="#88E6FF"

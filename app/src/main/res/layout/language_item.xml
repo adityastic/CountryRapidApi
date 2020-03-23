@@ -16,7 +16,7 @@
         android:fontFamily="@font/raleway_bold"
         android:paddingStart="@dimen/language_padding_start"
         android:text="@string/language_name"
-        android:textColor="@color/daynight_textColor"
+        android:textColor="@color/dayNight_textColor"
         android:textSize="@dimen/language_itemtext_size"
         android:textStyle="bold"
         tools:ignore="RtlSymmetry" />

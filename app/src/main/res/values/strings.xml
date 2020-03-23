@@ -16,4 +16,6 @@
     <string name="dummy_country">Country Name</string>
     <string name="dummy_city">City Name</string>
     <string name="dummy_region">Region</string>
+    <string name="no_internet_title">No Internet Found!</string>
+    <string name="no_internet_description">We are unable to connect to internet at the moment, please check your connection and re-open the app!</string>
 </resources>

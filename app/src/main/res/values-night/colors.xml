@@ -5,7 +5,7 @@
     <color name="colorAccent">#EF1515</color>
     <color name="bg">#000000</color>
     <color name="navcolor">#000001</color>
-    <color name="daynight_textColor">#FFFFFF</color>
+    <color name="dayNight_textColor">#FFFFFF</color>
     <color name="circle_color">#111111</color>
     <color name="rounded_rectangle">#111111</color>
     <color name="circle_image_border_color">#ffffff</color>

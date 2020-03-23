@@ -48,7 +48,7 @@
                 android:paddingStart="@dimen/country_padding_left"
                 android:text="@string/dummy_country"
                 android:textSize="@dimen/country_size"
-                android:textColor="@color/daynight_textColor"
+                android:textColor="@color/dayNight_textColor"
                 android:textStyle="bold"
                 tools:ignore="HardcodedText,RtlSymmetry" />
 
@@ -60,7 +60,7 @@
                 android:paddingStart="@dimen/country_padding_left"
                 android:text="@string/dummy_city"
                 android:textSize="@dimen/city_text_size"
-                android:textColor="@color/daynight_textColor"
+                android:textColor="@color/dayNight_textColor"
                 android:textStyle="bold"
                 tools:ignore="HardcodedText,RtlSymmetry" />
         </LinearLayout>
@@ -75,7 +75,7 @@
             android:fontFamily="@font/raleway_bold"
             android:paddingStart="@dimen/country_padding_left"
             android:text="@string/dummy_region"
-            android:textColor="@color/daynight_textColor"
+            android:textColor="@color/dayNight_textColor"
             tools:ignore="RtlSymmetry" />
     </LinearLayout>
 </LinearLayout>

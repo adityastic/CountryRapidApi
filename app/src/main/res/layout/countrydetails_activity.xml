@@ -49,7 +49,7 @@
                 android:fontFamily="@font/raleway_bold"
                 android:paddingStart="@dimen/heading_padding_start"
                 android:text="@{country.capital}"
-                android:textColor="@color/daynight_textColor"
+                android:textColor="@color/dayNight_textColor"
                 android:textSize="@dimen/heading_text_size"
                 android:textStyle="bold"
                 tools:ignore="HardcodedText,InefficientWeight,RtlSymmetry" />
@@ -90,7 +90,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/raleway_bold"
                     android:text="@{country.name}"
-                    android:textColor="@color/daynight_textColor"
+                    android:textColor="@color/dayNight_textColor"
                     android:textSize="@dimen/capital_text_size"
                     android:textStyle="bold"
                     tools:ignore="HardcodedText" />
@@ -135,7 +135,7 @@
                     android:background="@android:color/transparent"
                     android:fontFamily="@font/raleway_bold"
                     android:text="@{String.valueOf(country.population)}"
-                    android:textColor="@color/daynight_textColor"
+                    android:textColor="@color/dayNight_textColor"
                     android:textSize="@dimen/item_text_size"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -164,7 +164,7 @@
                     android:background="@android:color/transparent"
                     android:fontFamily="@font/raleway_bold"
                     android:text="@{country.alpha2Code}"
-                    android:textColor="@color/daynight_textColor"
+                    android:textColor="@color/dayNight_textColor"
                     android:textSize="@dimen/item_text_size"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -194,7 +194,7 @@
                     android:background="@android:color/transparent"
                     android:fontFamily="@font/raleway_bold"
                     android:text="@{country.region}"
-                    android:textColor="@color/daynight_textColor"
+                    android:textColor="@color/dayNight_textColor"
                     android:textSize="@dimen/item_text_size"
                     android:textStyle="bold" />
             </LinearLayout>
@@ -211,7 +211,7 @@
             android:background="@android:color/transparent"
             android:fontFamily="@font/raleway_bold"
             android:text="@string/languages"
-            android:textColor="@color/daynight_textColor"
+            android:textColor="@color/dayNight_textColor"
             android:textSize="@dimen/language_text_size"
             android:textStyle="bold" />
 

@@ -47,6 +47,7 @@ class CountryActivity : AppCompatActivity() {
             countryViewModel.displayList.value?.let { cInfoList ->
                 countryViewModel.adapter.set(CountryAdapter(cInfoList, this))
             }
+            countryViewModel.refreshAdapter()
         })
 
         countryViewModel.displayList.observe(this, Observer {

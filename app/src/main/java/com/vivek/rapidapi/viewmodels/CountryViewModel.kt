@@ -1,7 +1,7 @@
 package com.vivek.rapidapi.viewmodels
 
+import androidx.databinding.ObservableBoolean
 import androidx.databinding.ObservableField
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.vivek.rapidapi.adapters.CountryAdapter
@@ -15,6 +15,7 @@ class CountryViewModel(
     var items = listOf<CountryInfo>()
     var displayList: MutableLiveData<MutableList<CountryInfo>> = MutableLiveData()
     var adapter: ObservableField<CountryAdapter> = ObservableField()
+    var isEmpty: ObservableBoolean = ObservableBoolean(true)
 
     init {
         displayList.value = mutableListOf()
@@ -23,6 +24,7 @@ class CountryViewModel(
     fun getCountries() = countryService.getCountries()
 
     fun refreshAdapter() {
+        isEmpty.set(items.isEmpty())
         adapter.get()?.notifyDataSetChanged()
     }
 
@@ -35,7 +37,7 @@ class CountryViewModel(
                         item.capital.contains(query, true) ||
                         item.name.contains(query, true)
                     )
-                        displayList.value?.add(item);
+                        displayList.value?.add(item)
                 }
             } else
                 displayList.value?.addAll(it)

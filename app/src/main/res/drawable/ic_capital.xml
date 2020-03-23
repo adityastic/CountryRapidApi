@@ -2,7 +2,7 @@
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
     android:width="100dp"
     android:height="100dp"
-    android:tint="@color/daynight_textColor"
+    android:tint="@color/dayNight_textColor"
     android:viewportWidth="100"
     android:viewportHeight="100">
 
