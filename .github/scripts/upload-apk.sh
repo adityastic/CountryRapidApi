@@ -7,7 +7,7 @@ git clone --quiet --branch=apk https://adityastic:$GITHUB_TOKEN@github.com/adity
 
 cd apk
 
-find ../target -type f -name '*.apk' -exec cp -v {} . \;
+find . -type f -name '*.apk' -exec cp -v {} . \;
 
 git checkout --orphan temporary
 
