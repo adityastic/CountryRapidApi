@@ -54,6 +54,6 @@ jobs:
       - name: Build APK
         run: ./gradlew assembleDebug --stacktrace
       - name: Upload APK
-        run: ./.github/scripts/upload-apk.sh
+        run: ./.github/scripts/upload-app.sh
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
