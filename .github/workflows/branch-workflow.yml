@@ -72,7 +72,7 @@ jobs:
       - name: Build APK
         run: ./gradlew assembleDebug --stacktrace
       - name: Upload APK
-        run: echo $GITHUB_REPOSITORY && ./.github/scripts/upload-app.sh
+        run: bash ./.github/scripts/upload-app.sh
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: ${{ secrets.GITHUB_REPOSITORY }}
