@@ -3,7 +3,7 @@
 git config --global user.name "Github Actions"
 git config --global user.email "no-reply@gactions.com"
 
-git clone --quiet --branch=apk https://adityastic:$GITHUB_TOKEN@github.com/adityastic/CountryRapidApi apk > /dev/null
+git clone --quiet --branch=apk https://adityastic:$PAT@github.com/adityastic/CountryRapidApi apk > /dev/null
 
 cd apk
 

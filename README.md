@@ -1,4 +1,4 @@
-![Branch Push CI](https://github.com/adityastic/CountryRapidApi/workflows/Branch%20Push%20CI/badge.svg) ![Travis CI](https://travis-ci.com/adityastic/CountryRapidApi.svg?branch=master)
+![Branch Push CI](https://github.com/adityastic/CountryRapidApi/workflows/Branch%20Push%20CI/badge.svg)
 
 # CountryRapidApi
 
