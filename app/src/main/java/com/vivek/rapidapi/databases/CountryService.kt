@@ -11,9 +11,11 @@ import com.android.volley.toolbox.Volley
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import com.vivek.rapidapi.data.CountryInfo
-import org.koin.core.KoinComponent
+import org.koin.core.component.KoinApiExtension
+import org.koin.core.component.KoinComponent
 import java.lang.reflect.Type
 
+@KoinApiExtension
 class CountryService(
     context: Context
 ) : KoinComponent {

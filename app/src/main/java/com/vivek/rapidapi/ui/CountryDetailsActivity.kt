@@ -14,13 +14,15 @@ import com.bumptech.glide.request.target.Target
 import com.vivek.rapidapi.R
 import com.vivek.rapidapi.data.CountryInfo
 import com.vivek.rapidapi.databinding.CountrydetailsActivityBinding
-import kotlinx.android.synthetic.main.countrydetails_activity.*
 
 class CountryDetailsActivity : AppCompatActivity() {
+    private var _binding: CountrydetailsActivityBinding? = null
+    private val binding get() = _binding!!
 
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        _binding = CountrydetailsActivityBinding.inflate(layoutInflater)
         val activityBinding =
             DataBindingUtil.setContentView<CountrydetailsActivityBinding>(
                 this,
@@ -35,7 +37,7 @@ class CountryDetailsActivity : AppCompatActivity() {
 
     @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     private fun setBackListener() {
-        close_button.setOnClickListener {
+        binding.closeButton.setOnClickListener {
             finishAfterTransition()
         }
     }
@@ -67,6 +69,6 @@ class CountryDetailsActivity : AppCompatActivity() {
                 }
 
             })
-            .into(country_image)
+            .into(binding.countryImage)
     }
 }

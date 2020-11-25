@@ -7,7 +7,9 @@ import androidx.lifecycle.ViewModel
 import com.vivek.rapidapi.adapters.CountryAdapter
 import com.vivek.rapidapi.data.CountryInfo
 import com.vivek.rapidapi.databases.CountryService
+import org.koin.core.component.KoinApiExtension
 
+@KoinApiExtension
 class CountryViewModel(
     private val countryService: CountryService
 ) : ViewModel() {

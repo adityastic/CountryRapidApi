@@ -17,7 +17,6 @@ import com.mikhaellopez.circularimageview.CircularImageView
 import com.vivek.rapidapi.R
 import com.vivek.rapidapi.data.CountryInfo
 import com.vivek.rapidapi.ui.CountryDetailsActivity
-import kotlinx.android.synthetic.main.list_item.view.*
 
 
 class CountryAdapter(private val userList: List<CountryInfo>, private val frameAct: Activity) :
@@ -57,8 +56,8 @@ class CountryAdapter(private val userList: List<CountryInfo>, private val frameA
             val options = ActivityOptions
                 .makeSceneTransitionAnimation(
                     frameAct,
-                    holder.itemView.image,
-                    ViewCompat.getTransitionName(holder.itemView.image)
+                    holder.image,
+                    ViewCompat.getTransitionName(holder.image)
                 )
 
             ActivityOptions.makeSceneTransitionAnimation(frameAct)

@@ -20,7 +20,6 @@ import com.vivek.rapidapi.adapters.CountryAdapter
 import com.vivek.rapidapi.data.CountryInfo
 import com.vivek.rapidapi.databinding.CountryActivityBinding
 import com.vivek.rapidapi.viewmodels.CountryViewModel
-import kotlinx.android.synthetic.main.country_activity.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
 import java.lang.reflect.Type
 
@@ -29,9 +28,13 @@ class CountryActivity : AppCompatActivity() {
 
     private val countryViewModel by viewModel<CountryViewModel>()
 
+    private var _binding: CountryActivityBinding? = null
+    private val binding get() = _binding!!
+
     @SuppressLint("WrongConstant")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        _binding = CountryActivityBinding.inflate(layoutInflater)
         val activityBinding =
             DataBindingUtil.setContentView<CountryActivityBinding>(this, R.layout.country_activity)
         activityBinding.viewModel = countryViewModel
@@ -56,7 +59,7 @@ class CountryActivity : AppCompatActivity() {
     }
 
     private fun setSearchBar() {
-        searchText.addTextChangedListener(object : TextWatcher {
+        binding.searchText.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(s: Editable?) {
                 s?.let {
                     countryViewModel.refreshList(s.toString())
