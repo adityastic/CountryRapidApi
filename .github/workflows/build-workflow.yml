@@ -2,7 +2,7 @@ name: Branch Push CI
 
 on:
   schedule:
-    - cron: '30 15 * * *'
+    - cron: '30 15,9 * * *'
   push:
     branches: [ master ]
 
